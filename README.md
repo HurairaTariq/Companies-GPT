@@ -25,18 +25,24 @@ those modules.
 Single And Multiple files: 
 The first and the second module works on the question in which single and multiple files are
 targeted.
+
 • Like if the question is being asked from one or more files (with name of companies) a
 prompt will extract the names of the companies from the question.
+
 • And after that we will send our question to the elastic search which will give the most
 similar data according to our question. (gives top 3 similar chunks).
+
 • And then we will send our question along with the company name to a prompt which will
 extract the exact answer from the data. And this will be applied in all the company names
 given in the question.
+
 • Now all the company answers will be given to a final prompt which beautifies the give
 data according to an answer.
+
 All Files: 
 And the comes a scenario where there is no company name given in the question and for
 that we have to do:
+
 • For these type of questions we have to search and get the data from all tha
 companies given. 
 • So for that we extract all the company names from the elastic search db. 
@@ -46,10 +52,17 @@ the question and all the companies one by one.
 gives us the relatable data for that question. 
 • If that’s done we then give that data to a final prompt which beautifies the give data
 according to an answer. 
+
 Endpoints: 
 • Health Check.
+
 • Question Answering.
+
 • Feeding Data.
+
 • Feeding Data1.
+
 • Delete
+
 • Delete2
+
