@@ -66,3 +66,31 @@ Endpoints:
 
 • Delete2
 
+Note: 
+• Data insertion in the elastic search db takes a lot of time because of the vectorization of 
+the data. And due to that on server it gives us a critical timeout error during the 
+insertion. 
+• On the first index of the txt file there must be the name of the company. 
+ 
+Samples: 
+"question": 
+"Who is hosting the conference call for Amgen's and Alliant Energy's Q3 2022
+financial results"
+"Answer": 
+" Jason is hosting the conference call for Amgen's Q3 2022 financial results and Susan
+Gille is hosting the conference call for Alliant Energy's Q3 2022 financial results."
+'question": 
+"What is the main focus of Amgen as a company compared to what was announced
+in Alliant Energy's news release for Q3 2022 earnings?"
+"Answer": " 
+The drivers of future earnings growth for AvalonBay Communities are the
+development projects underway, further margin improvement from operating model initiatives,
+return on structured investment program and an earn-in above traditional levels."
+"question": 
+"give me the names who's hosting the conference call in all companies?"
+"Answer": 
+"Yan Jin (Eaton Corp plc), Fabrizio Freda and Tracey Travis (CBRE Group, Inc.), Susan
+Gille and Maxius Mezz (AMGEN INC), Mike Salvino and Ken Sharp (DXC Technology Co.), Tom and
+Jessica Hansen (D.R. Horton Inc.), Jason Reilley (AvalonBay Communities) David Straube (EPAM
+Systems) and Marius Merz (BNY Mellon)
+
